@@ -19,7 +19,7 @@
     <prerequisites>
         <maven>3.5.0</maven>
     </prerequisites>
-
+    
     <dependencies>
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
@@ -146,6 +146,12 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
+        
+        <dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>12.2.0.1</version>
+		</dependency>
 
         <!-- webjars -->
         <dependency>
@@ -263,6 +269,11 @@
                 <enabled>false</enabled>
             </snapshots>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>nexus</id>
+            <name>nexus-eds</name>
+            <url>https://nexus.extremedigital.com.br/nexus/repository/maven-all/</url>
         </repository>
     </repositories>
 
